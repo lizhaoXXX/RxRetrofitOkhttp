@@ -6,25 +6,23 @@
 \\1. Add it in your root build.gradle at the end of repositories:
 
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
+	repositories {
+		maven { url 'https://jitpack.io' }
 		}
 	}
   
   
-  \\2.  Add the dependency
+\\2.  Add the dependency
 dependencies {
-	        implementation 'com.github.lizhaoXXX:RxRetrofitOkhttp:Tag'
+	implementation 'com.github.lizhaoXXX:RxRetrofitOkhttp:Tag'
 	}
   
  ```
-  
+  </br>
   二、使用
-  
-
-  此项目demo的接口使用玩Android提供的开放接口，具体请看
-  https://www.wanandroid.com/blog/show/2
+</br>
+此项目demo的接口使用玩Android提供的开放接口，具体请看
+https://www.wanandroid.com/blog/show/2
   
   
   1. 和retrofit使用一样，创建一个接口
