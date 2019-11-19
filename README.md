@@ -46,7 +46,7 @@ RxNetworkManage.getInstant().setReleaseUrl("https://www.wanandroid.com/");
 ```
 </br></br>
 
-3. 继承RxRetrofitActivity，或者自己BaseDisposable
+3. 继承RxRetrofitActivity，或者实现BaseDisposable
 
 ```
 public class MainActivity extends RxRetrofitActivity {
