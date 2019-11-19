@@ -12,11 +12,12 @@ allprojects {
 	}
   
   
-\\2.  Add the dependency
-dependencies {
-	implementation 'com.github.lizhaoXXX:RxRetrofitOkhttp:Tag'
-	}
   
+  \\2.  Add the dependency
+  
+dependencies {
+	implementation 'com.github.lizhaoXXX:RxRetrofitOkhttp:1.0.4'
+	}
  ```
   </br>
   二、使用
@@ -42,7 +43,6 @@ https://www.wanandroid.com/blog/show/2
 //在application初始化
 
 RxNetworkManage.getInstant().setReleaseUrl("https://www.wanandroid.com/");
-
 ```
 </br></br>
 
@@ -51,13 +51,11 @@ RxNetworkManage.getInstant().setReleaseUrl("https://www.wanandroid.com/");
 ```
 public class MainActivity extends RxRetrofitActivity {
 }
-
 ```
 </br></br>
 4.使用
 
 ```
-
 RxRetrofit.getInstant()
 	.getDefaultNet()
 	.getChapters()
@@ -73,5 +71,11 @@ RxRetrofit.getInstant()
 				
 		}
 	});
-	
+```
+</br>
+5. 如果你的项目还没引用rx，则需要导包
+
+```
+implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
 ```
