@@ -21,9 +21,11 @@ dependencies {
   </br>
   二、使用
 </br>
+
 此项目demo的接口使用玩Android提供的开放接口，具体请看
 https://www.wanandroid.com/blog/show/2
 </br></br>
+
 1. 和retrofit使用一样，创建一个接口
 ```
   public interface RxListener {
@@ -33,7 +35,9 @@ https://www.wanandroid.com/blog/show/2
 }
 ```
 </br></br>
+
 2.在application初始化网络请求参数
+
 ```
 //在application初始化
 
@@ -41,7 +45,9 @@ RxNetworkManage.getInstant().setReleaseUrl("https://www.wanandroid.com/");
 
 ```
 </br></br>
+
 3. 继承RxRetrofitActivity，或者自己BaseDisposable
+
 ```
 public class MainActivity extends RxRetrofitActivity {
 }
@@ -49,6 +55,7 @@ public class MainActivity extends RxRetrofitActivity {
 ```
 </br></br>
 4.使用
+
 ```
 
 RxRetrofit.getInstant()
